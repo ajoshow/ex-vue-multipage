@@ -1,3 +1,4 @@
+// https://webpack.js.org/configuration
 const merge = require('webpack-merge');
 const pathConfig = require('./path.config.js');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
@@ -42,7 +43,7 @@ const config = merge(pathConfig, {
     resolve: {
         extensions: ['.js', '.ts', '.vue', '.tsx'],
         alias: {
-            'vue$': 'vue/dist/vue', // vue/dist/vue.esm.js
+            'vue$': 'vue/dist/vue.esm.js', // vue/dist/vue
             '@src': path.resolve(__dirname, '../src'),
             '@': path.resolve(__dirname, '../')
         }

@@ -8,6 +8,7 @@ const config = merge(baseConfig, {
     path: path.resolve(__dirname, '../build'),
     filename: 'js/[name].js'
   },
+  // https://webpack.js.org/configuration/dev-server
   devServer: {
     contentBase: [path.resolve(__dirname, '../public'), path.resolve(__dirname, '../public/static')],
     publicPath: path.resolve(__dirname, '/'),
