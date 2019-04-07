@@ -8,8 +8,6 @@
 </template>
 
 <script>
-    import '@src/common/libs'
-
     export default {
         data() {
             return {

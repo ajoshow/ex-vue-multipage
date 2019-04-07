@@ -6,8 +6,8 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const config = merge(baseConfig, {
   mode : 'production',
   output: {
-    path: path.resolve(__dirname, '../dist'),
-    filename: 'js/[name].min.js'
+    path: path.resolve(__dirname, '../build'),
+    filename: 'js/[name].js'
   },
   optimization: {
     minimizer: [

@@ -12,7 +12,8 @@
         {{$v}}
     </p>
     <fetch-button></fetch-button>
+    <p>Hi: {{ hi }}</p>
 </div>
-<script src="/js/page1/index.min.js"></script>
+<script src="/js/page1/index.js"></script>
 </body>
 </html>

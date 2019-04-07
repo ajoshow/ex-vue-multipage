@@ -5,7 +5,16 @@ plugins {
     id 'war'
 }
 
+apply plugin: 'idea'
 apply plugin: 'io.spring.dependency-management'
+
+idea {
+    module {
+        inheritOutputDirs = false
+        outputDir = compileJava.destinationDir
+        testOutputDir = compileTestJava.destinationDir
+    }
+}
 
 group = 'com.ajoshow'
 version = '0.0.1-SNAPSHOT'
@@ -15,10 +24,18 @@ repositories {
     mavenCentral()
 }
 
+configurations {
+    developmentOnly
+    runtimeClasspath {
+        extendsFrom developmentOnly
+    }
+}
+
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'javax.servlet:jstl:1.2'
     providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
     providedRuntime 'org.apache.tomcat.embed:tomcat-embed-jasper'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    developmentOnly("org.springframework.boot:spring-boot-devtools")
 }
