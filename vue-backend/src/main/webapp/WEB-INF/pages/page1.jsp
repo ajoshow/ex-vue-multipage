@@ -14,6 +14,6 @@
     <fetch-button></fetch-button>
     <p>Hi: {{ hi }}</p>
 </div>
-<script src="/js/page1/index.js"></script>
+<script src="/js/page1/bundle.js"></script>
 </body>
 </html>

@@ -5,6 +5,6 @@
 </head>
 <body>
     <h1>${greeting}</h1>
-    <script src="/js/home/index.js"></script>
+    <script src="/js/home/bundle.js"></script>
 </body>
 </html>

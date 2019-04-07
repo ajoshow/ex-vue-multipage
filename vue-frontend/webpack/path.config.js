@@ -2,8 +2,8 @@ const path = require('path');
 
 const config = {
   entry: {
-    'home/index' : path.resolve(__dirname, '../src/page/index.js'),
-    'page1/index' : path.resolve(__dirname, '../src/page/page1.js')
+    'home/bundle' : path.resolve(__dirname, '../src/page/index.js'),
+    'page1/bundle' : path.resolve(__dirname, '../src/page/page1.js')
   }
 };
 
