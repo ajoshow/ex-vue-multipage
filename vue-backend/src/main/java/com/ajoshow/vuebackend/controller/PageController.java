@@ -22,4 +22,11 @@ public class PageController {
         mav.addObject("greeting", "Hello World");
         return mav;
     }
+
+    @GetMapping(value =  {"page2"})
+    public ModelAndView page2() {
+        ModelAndView mav = new ModelAndView("/page2");
+        mav.addObject("greeting", "Hello World2");
+        return mav;
+    }
 }

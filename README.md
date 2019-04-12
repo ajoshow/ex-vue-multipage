@@ -70,6 +70,8 @@ For frontend developer:
 2. /src contains three sub-directories:
    - common: shared javascript files. 
    - component: .vue components. 
+        - common: shared vue components.
+        - page: app components for a page. (naming convention: for index page, please use the same name as its directory, and use under bar for its page components.)
    - page: bundle javascript for each page.
 3. /public contains static files used by dev server, for test and quick inspection purpose only.
    - "npm run serve" to start dev serve 

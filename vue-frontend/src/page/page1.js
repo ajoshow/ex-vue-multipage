@@ -7,7 +7,7 @@ new Vue({
   data : {
     greeting: 'hello world',
     email: '',
-    hi : 'hi21'
+    hi : 'hi23'
   },
   components: {
     fetchButton : fetchButtonComponent
